@@ -7,8 +7,6 @@ export default defineConfig({
   experimental: {
     viewTransitions: true
   },
-  site: "https://andresfera99.github.io",
-  base: "/astro-katana",
   output: "server",
   adapter: vercel()
 });
