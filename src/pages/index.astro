@@ -1,0 +1,18 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import SectionTitle from "../components/SectionTitle.astro";
+import SectionProyect from "../components/SectionProyect.astro";
+---
+
+<Layout title="Welcome to Astro.">
+	<main>
+		<SectionTitle img="/Estilo_Katana_Studio_1 1.png" title="proyectos" href="/astro-katana/nosotros"/>
+		<SectionProyect
+			img="/MockUp_Ejemplo_Marca_2 1.png"
+			title="aquelus"
+			subtitle="branding · 身元"
+			body="Aquelus es un proyecto de identidad corporativa dirigido a una cadena de hoteles-boutique ubicados en el mediterráneo, con el objetivo de transmitir la elegancia de la cultura clásica mediterranea fusionada con la sofisticación de la tecnología mas vanguardista."
+		/>
+	</main>
+</Layout>
