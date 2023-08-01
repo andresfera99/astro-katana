@@ -19,6 +19,13 @@
 a {
 	text-decoration: none;
 	color: black;
+	text-align: center;
+	cursor: pointer;
+	transition: scale 0.1s ease-in-out;
+	&:hover {
+		color: var(--accent-color);
+		scale: 1.2;
+	}
 }
 
 body {
@@ -33,56 +40,87 @@ body {
 	background-size: 19px 19px;
 }
 
+nav,
+a {
+	font-size: clamp(0.75rem, 0.6786rem + 0.3571vw, 1rem);
+}
 nav {
 	color: white;
 	background-color: var(--accent-color);
 	display: flex;
+	align-items: center;
 	width: 100%;
 	& ul {
 		display: flex;
 		list-style-type: none;
 		margin: 0.5em;
 		padding: 1em;
+		gap: 0.5em;
 		justify-content: space-between;
-		min-width: 300px;
 		text-transform: uppercase;
 	}
 
 	a {
 		text-decoration: none;
 		color: white;
+		&:hover {
+			color: white;
+			scale: 1.1;
+		}
 	}
 }
 
 #icon {
 	margin-right: auto;
+	max-width: 50px;
+}
+
+footer {
+	min-width: 100vw;
+	height: 500px;
+	position: sticky;
+	bottom: 0;
+	background: rgba(2, 0, 36, 0.116);
+	background: linear-gradient(
+		360deg,
+		rgba(0, 0, 0, 0.562) 0%,
+		rgba(0, 212, 255, 0) 100%
+	);
+	z-index: 100;
+	pointer-events: none;
 }
 
 main {
-	padding: 2em;
+	// padding: 2em;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 
 	section {
-		margin-bottom: 20em;
+		margin-bottom: 15em;
+
+		&:first-child {
+			margin-top: 5em;
+		}
 	}
 
 	.section-title {
-		width: 67rem;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		max-width: 70em;
+
+		img {
+			max-width: 100%;
+		}
+
 		div {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
+			display: grid;
+			place-items: center;
+			padding: 1% clamp(1em, 1em + 10vw, 10em);
 			background-color: white;
-			height: 5rem;
 			font-weight: bold;
 			text-transform: uppercase;
-			width: 40rem;
 			box-shadow: 30px 30px 4px 0px rgba(0, 0, 0, 0.25);
 			transform: translateY(-60%);
 		}
@@ -91,18 +129,25 @@ main {
 	.section-proyect {
 		display: flex;
 		transform: translateX(-6.5%);
+		// max-width: 70em;
 
 		div {
 			background-color: white;
-			height: 16rem;
+			max-height: 36rem;
+			height: min-content;
 			width: 28rem;
 			padding: 1.5em;
 			box-shadow: 30px 30px 4px 0px rgba(0, 0, 0, 0.25);
-			transform: translateX(40%);
+			transform: translateX(40%) translateY(40%);
 
 			h3,
 			h4 {
 				color: var(--accent-color);
+				margin-bottom: 0.2em;
+			}
+
+			p {
+				margin-top: 0.5em;
 			}
 		}
 	}
@@ -116,5 +161,18 @@ main {
 	}
 	p {
 		font-size: 0.9rem;
+	}
+}
+
+.mySwiper {
+	margin-left: 2em;
+	margin-right: 2em;
+	box-shadow: 30px 30px 4px 0px rgba(0, 0, 0, 0.25);
+
+	div {
+		width: 50vw;
+		img {
+			width: 50vw;
+		}
 	}
 }

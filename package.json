@@ -10,7 +10,13 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/react": "^2.2.1",
     "@astrojs/vercel": "^3.7.4",
-    "astro": "^2.9.0"
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "astro": "^2.9.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "swiper": "^10.0.4"
   }
 }

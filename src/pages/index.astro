@@ -1,18 +1,41 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
 import SectionTitle from "../components/SectionTitle.astro";
 import SectionProyect from "../components/SectionProyect.astro";
+import MySwiper from "../components/Swipper.astro";
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
-		<SectionTitle img="/Estilo_Katana_Studio_1 1.png" title="proyectos" href="/nosotros"/>
-		<SectionProyect
-			img="/MockUp_Ejemplo_Marca_2 1.png"
-			title="aquelus"
-			subtitle="branding · 身元"
-			body="Aquelus es un proyecto de identidad corporativa dirigido a una cadena de hoteles-boutique ubicados en el mediterráneo, con el objetivo de transmitir la elegancia de la cultura clásica mediterranea fusionada con la sofisticación de la tecnología mas vanguardista."
+		<SectionProyect img="/Estilo_Katana_Studio_2 1.png" title="SOMOS PASIÓN, DEDICACIÓN Y ESFUERZO" subtitle=" ·カタナスタジオ·" body="Katana Studio es un proyecto que engloba múltiples valores y creencias, maneras de pensar y trabajar, con la finalidad de permitir expresar y comunicar en un proyecto gráfico toda la grandeza que tiene el proceso de creación de la comunicación visual. Katana Studio es una filosofía que aboga por la validez de multitud de propuestas, apuesta por ellas, las estudia y finalmente crea la mejor versión de todos esos conocimientos aplicados. Pasión, dedicación y esfuerzo es el mantra que guía a las mentes para ser capaces de crear la mejor versión de ellos mismos, y a la vez la directriz que guía este proyecto para lograr la mayor calidad en nuestro trabajo. Somos diseño gráfico, comunicación, concepto, análisis, pasión, dedicación y esfuerzo. Somos Katana Studio." />
+		<SectionTitle
+		img="/Estilo_Katana_Studio_1 1.png"
+		title="proyectos"
+		href="/studio"
 		/>
+		<SectionProyect
+		img="/MockUp_Ejemplo_Marca_2 1.png"
+		title="aquelus"
+		subtitle="branding · 身元"
+		body="Aquelus es un proyecto de identidad corporativa dirigido a una cadena de hoteles-boutique ubicados en el mediterráneo, con el objetivo de transmitir la elegancia de la cultura clásica mediterranea fusionada con la sofisticación de la tecnología mas vanguardista."
+		/>
+		<SectionProyect
+		img="/MockUp_Ejemplo_Marca_3 1.png"
+		title="levante u.d"
+		subtitle="social media · ソーシャルネットワーク"
+		body="Levante U.D. es uno de los equipos de 1ra División de la Liga BBVA y uno de los clubs mas importantes de Valencia, fundado en 1909, y manteniendo hasta el dia de hoy una pasión inquebrantable por el fútbol, por su ciudad y por la gran familia que conforman los aficionados."
+		/>
+		<SectionTitle
+			img="/Estilo_Katana_Studio_5 1.png"
+			title="コンタクト · contacto · コンタクト"
+			href="/nosotros"
+		/>
+		<SectionProyect
+		img="/Estilo_Katana_Studio_4 1.png"
+		title="cuéntanos hoy tu proyecto!"
+		subtitle="·始めましょう·"
+		body="Para nosotros las buenas ideas son el motor que mueve el corazón de las empresas y estamos expectantes de que nos cuentes la tuya! Contacta con nosotros, coméntanos tu proyecto y encontrémos la mejor manera de llevar a cabo ese gran concepto. Te invitamos a que contactes con nosotros mediante los siguientes medios, estamos deseando escuchar tu história! · eniandres99@gmail.com · +34 661 197 448"
+		/>
+		<MySwiper />
 	</main>
 </Layout>
