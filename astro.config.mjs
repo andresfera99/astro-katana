@@ -1,14 +1,14 @@
-import { defineConfig } from 'astro/config';
-import vercel from "@astrojs/vercel/serverless";
+import { defineConfig } from "astro/config";
 
 import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
-  experimental: {
-    viewTransitions: true
-  },
-  output: "server",
-  adapter: vercel(),
-  integrations: [react()]
+	experimental: {
+		viewTransitions: true,
+	},
+	output: "server",
+	site: "https://andresfera99.github.io",
+	base: "/astro-katana",
+	integrations: [react()],
 });
