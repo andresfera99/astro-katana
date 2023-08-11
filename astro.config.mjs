@@ -7,7 +7,6 @@ export default defineConfig({
 	experimental: {
 		viewTransitions: true,
 	},
-	output: "server",
 	site: "https://andresfera99.github.io",
 	base: "/astro-katana",
 	integrations: [react()],
